@@ -13,6 +13,8 @@ func TestReverseArray(t *testing.T) {
     espected []int32
   }{
       {[]int32{1,2,3},[]int32{3,2,1}},
+      {[]int32{1,2,3,4},[]int32{4,3,2,1}},
+      {[]int32{3,2,3},[]int32{3,2,3}},
     }
   for _,s :=range simulations{
     output := ReverseArray(s.input)
